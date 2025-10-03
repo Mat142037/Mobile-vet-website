@@ -1,9 +1,15 @@
  <!DOCTYPE html>
  <html> 
     <head>
-        <title>Contact</title>
+        <title>Fetchcare Mobile Vets - Contact</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mobile veterinary practice">
+        <meta name="keywords" content="vets, mobile-vets, veterinary">
+        <meta name="author" content="Matthew Smith">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d6893f0b46.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
@@ -38,7 +44,8 @@
               type="text"
               id="firstname"
               name="firstname"
-              value="John"
+              value=""
+              required
             />
 
             <br>
@@ -47,38 +54,95 @@
               type="text"
               id="surnamename"
               name="surname"
-              value="Smith"
+              value=""
+              required
             />
             
             <br>
-            <label for="address">Address</label>
+            <p>Address&colon;</p>
+            <label for="address1">Address Line 1</label>
             <input 
               type="text"
-              id="address"
-              name="address"
-              value="123 Anywhere St"
+              id="address1"
+              name="address1"
+              value=""
+              required
+            />
+
+            <br>
+            <label for="address2">Address Line 2</label>
+            <input 
+              type="text"
+              id="address2"
+              name="address2"
+              value=""
+            />
+
+            <br>
+            <label for="towncity">Town&sol;City</label>
+            <input 
+              type="text"
+              id="towncity"
+              name="towncity"
+              value=""
+              required
+            />
+
+            <br>
+            <label for="postcode">Postcode</label>
+            <input 
+              type="text"
+              id="postcode"
+              name="postcode"
+              value=""
+              required
             />
             
             <br>
             <label for="phonenumber">Contact Number</label>
             <input 
-              type="number"
+              type="tel"
               id="phonenumber"
               name="phonenumber"
-              value="012345678"
+              value=""
+              required
+            />
+
+            <br>
+            <label for="email">E&hyphen;Mail</label>
+            <input 
+              type="text"
+              id="email"
+              name="email"
+              value=""
+              required
             />
            
             <br>
-            <label for="enquiry">Enquiry</label>
-            <input 
+            <label for="enquiry">Enquiry Type&colon;</label>
+            <select>
               type="text"
               id="enquiry"
               name="enquiry"
-              value=""
-            />
-            
+                <option value="">Please select an option</option>
+                <option value="bookings">Bookings</option>
+                <option value="billing">Billing</option>
+                <option value="complaints">Complaints</option>
+                <option value="general-enquiry">General Equiry</option>
+            </select>
+
             <br>
-            <input type="submit" value="Submit"/>
+            <label for="textbox">Message&colon;</label>
+            <textarea 
+              id="textbox"
+              name="textbox"
+              rows="15"
+              minlength="5"
+              required>
+            </textarea>
+
+            <br>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
